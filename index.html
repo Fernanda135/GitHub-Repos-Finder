@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GitHub Repos Finder</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <button id="toggle-theme" class="btn-theme">
+            <span class="material-icons" id="theme-icon">dark_mode</span>
+        </button>
+
+
+        <div class="container" id="main">
+            <main>
+                <h1>Repositórios GitHub</h1>
+                <form id="repos-form">
+                    <div class="user-input">
+                        <label for="github-username">Usuário GitHub</label>
+                        <input id="github-username" type="text" placeholder="GitHub username">
+                    </div>
+                    <button type="submit" id="get-repos" class="btn btn-default">Obter Repositórios</button>
+                </form>
+            </main>
+            <ul id="repos-list"></ul>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="theme.js"></script>
+    </body>
+</html>
