@@ -60,7 +60,7 @@ form.addEventListener("submit", event => {
                 list.insertAdjacentHTML("beforeend", `<li>
                 <a href="${repo.html_url}" target="_blank">
                     <h2>${repo.full_name}</h2>
-                    <p>${repo.description}</p>
+                    <p>${repo.description ? repo.description : "Sem descrição"}</p>
                 </a>
             </li>`);
         });
